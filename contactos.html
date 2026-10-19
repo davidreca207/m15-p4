@@ -1,53 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P0</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylee.css">
+    <title>Práctica 2 - Contactos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Practica 0</a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="html-p0.html">Práctica 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="html-p0.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="proyectos.html">proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contactos.html">Contactos</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="html-p0.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactos</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="contenido">
-        <div class="texto">
-         <h1>CONTACTOS</h1>
-         <h5>david.recarey@barresiones.cat</h5>
+
+    <header class="bg-info text-white text-center p-4">
+        <h1>Contactos</h1>
+    </header>
+
+    <main class="container my-4 flex-grow-1">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-3 shadow-sm">
+                    <div class="ratio ratio-4x3 bg-light">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Gmail_icon_%282026%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" class="card-img-top object-fit-contain p-3" alt="Icono de Gmail">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Correo electrónico</h5>
+                        <p class="card-text">david.recarey@barresiones.cat</p>
+                        <a href="mailto:david.recarey@barresiones.cat" class="btn btn-primary">Més informació</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-3 shadow-sm">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8ZktNwmy-7XhSwcyUSSD4Bb71Os-CXCo3h2NZnPcJef2m0qjaElys5Pn&s=10" class="card-img-top object-fit-cover" alt="Teléfono móvil">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Teléfono</h5>
+                        <p class="card-text">600 123 456</p>
+                        <a href="tel:+34600123456" class="btn btn-primary">Més informació</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-3 shadow-sm">
+                    <div class="ratio ratio-4x3">
+                        <img src="https://www.trenscat.com/tmb/images/metro/l9/P100421101.jpg" class="card-img-top object-fit-cover" alt="Calle de Barcelona">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Dirección</h5>
+                        <p class="card-text">Carrer de les Ones, 25, 08000 Barcelona</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Carrer+de+les+Ones+25+Barcelona" target="_blank" rel="noopener" class="btn btn-primary">Més informació</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="foto">
-        <img src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2019/05/14/949984.jpg"
-        alt="100x100"
-        width="300"
-        height="200">
-        </div>
-            <div class="vacaciones">
-        <h2>Videojuegos</h2>
-        <p>
-            Me gusta el Rocket League, El valorant, COD black ops 2, Elder Scroll Online, Assassin's Creed toda la saga, Uncharted toda la saga, R.E.P.O, Lethal Company y toda la saga de Fable.
-        </p>
-           </div>
-    </div>
-    <footer class="bg-dark text-white text-center p-3">
-        @2026 David Recarey Aguilar/Barres i Ones
+    </main>
+
+    <footer class="bg-secondary text-white text-center p-3">
+        © 2025 Institut Barres i Ones
     </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
